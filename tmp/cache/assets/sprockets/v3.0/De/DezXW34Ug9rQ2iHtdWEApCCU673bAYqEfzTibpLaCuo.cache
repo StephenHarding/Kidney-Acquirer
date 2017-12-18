@@ -1,0 +1,16 @@
+{:uriI"}file://app/assets/game/Spleens.json?type=application/json&id=4387b8ef62681cdae73c767b23fda5ce4a66c09c2553e3ceb5c041a0e153fbd1:ET:load_pathI"app/assets/game;T:filenameI"!app/assets/game/Spleens.json;T:	nameI"Spleens;T:logical_pathI"Spleens.json;T:content_typeI"application/json;T:sourceI"Å{ "columns":1,
+ "image":"singleSpleen.png",
+ "imageheight":26,
+ "imagewidth":23,
+ "margin":0,
+ "name":"Spleens",
+ "spacing":0,
+ "tilecount":1,
+ "tileheight":26,
+ "tilewidth":23,
+ "type":"tileset"
+};T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"/file-digest://app/assets/game/Spleens.json;TTF:charsetI"
+utf-8;F:digest"%nó¡€|Eþ·{Ùÿ¨°‰074½47"dóìÛ¿ê:lengthiÅ:dependencies_digest"%“ØÿtÉž|Âª³ÏýD|ŠÌ}úØ=¹|„Z³ÿ’êE½:idI"E4387b8ef62681cdae73c767b23fda5ce4a66c09c2553e3ceb5c041a0e153fbd1;F:
+mtimel+>×2Z

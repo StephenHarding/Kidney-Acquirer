@@ -1,0 +1,12 @@
+{ "columns":1,
+ "image":"singleSpleen.png",
+ "imageheight":26,
+ "imagewidth":23,
+ "margin":0,
+ "name":"Spleens",
+ "spacing":0,
+ "tilecount":1,
+ "tileheight":26,
+ "tilewidth":23,
+ "type":"tileset"
+}
