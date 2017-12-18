@@ -20,7 +20,10 @@ var layer;
 var p;
 var cursors;
 var jumpButton
-var spleensc = 7
+var spleensc = 10
+var t = 0
+var score = false
+var ft = 0
 
 function create() {
 
@@ -48,7 +51,7 @@ function create() {
     // layer.debug = true;
 
     layer.resizeWorld();
-    scoreText = game.add.text(16, 16, 'score: ' + spleensc, { fontSize: '32px', fill: '#000' });
+    scoreText = game.add.text(16, 16, 'Kidneys: ' + spleensc, { fontSize: '32px', fill: '#000' });
     scoreText.fixedToCamera = true
 
     p = game.add.sprite(34, 21, 'dude');
@@ -71,24 +74,48 @@ function create() {
 
     cursors = game.input.keyboard.createCursorKeys();
 
-    var slocations = [515, 100, 515, 300, 1445, 62, 1735, 400, 2075, 150, 2585, 29, 3400, 60]
+    var slocations = [515, 100, 515, 300, 1445, 62, 1735, 400, 2075, 150, 2585, 29, 3400, 60, 3959, 215, 4285, 0, 5885, 254]
 
-    for (var i = 0; i < 13; i += 2) {
+    for (var i = 0; i < 19; i += 2) {
     var spleen = spleens.create(slocations[i], slocations[i + 1] , 'spleen')
 
     }
     jumpButton = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
-
+ endText = game.add.text(300, 230, "" ,{ fontSize: '64px', fill: '#000' });
 }
+endText.fixedToCamera = true
 function collect(p, s) {
         spleensc -= 1
-    scoreText.text = `score: ` + spleensc
+    scoreText.text = `Kidneys: ` + spleensc
     s.kill();
 
 
 }
 
+function postScore() {
+    console.log('posted')
+    fetch('/high_score/create/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+         score:  ft,
+
+      })
+    }).then(() => {
+      console.log("Posted")
+  })
+}
+
 function update() {
+        if (spleensc === 0 && score === false ) {
+            score = true
+         ft = t
+        endText.text = ft
+        endText.fixedToCamera = true
+    }
+
 
     game.physics.arcade.collide(p, layer);
 
@@ -141,7 +168,7 @@ function update() {
     {
         if (p.body.onFloor())
         {
-            p.body.velocity.y = -300;
+            p.body.velocity.y = -284;
         }
     }
 }
@@ -165,9 +192,13 @@ function update() {
 // }
 
 function render() {
+    t = game.math.roundTo(this.game.time.totalElapsedSeconds()/1, -2)
 
     // game.debug.body(p);
-    game.debug.bodyInfo(p, 32, 320);
+    if (score === false) {
+            game.debug.text('Elapsed seconds: ' + t, 32, 530);
+
+    }
 
 }
 

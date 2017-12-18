@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-
+	has_many :high_scores
   def is_password?(password_attempt)
     BCrypt::Password.new(password_digest).is_password?(password_attempt)
   end
