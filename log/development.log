@@ -30168,3 +30168,142 @@ Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/dude189
 Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-12-19 15:52:34 -0500
+Processing by RootController#main as HTML
+  Rendering root/main.html.erb within layouts/application
+  Rendered root/main.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 111ms (Views: 96.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game/index" for 127.0.0.1 at 2017-12-19 15:52:41 -0500
+Processing by GameController#index as HTML
+  Rendering game/index.html.erb within layouts/application
+  Rendered game/index.html.erb within layouts/application (125.1ms)
+Completed 200 OK in 246ms (Views: 241.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game/assets/collision_test4.json" for 127.0.0.1 at 2017-12-19 15:52:44 -0500
+Processing by AssetController#map as JSON
+Started GET "/game/assets/tiles2.png" for 127.0.0.1 at 2017-12-19 15:52:44 -0500
+Started GET "/game/assets/walls_1x2.png" for 127.0.0.1 at 2017-12-19 15:52:44 -0500
+  Rendering assets/games/collision_test4.json
+Processing by AssetController#tiles as PNG
+Started GET "/game/assets/ground_1x1.png" for 127.0.0.1 at 2017-12-19 15:52:44 -0500
+Processing by AssetController#walls as PNG
+  Rendered assets/games/collision_test4.json (4.8ms)
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/tiles2.png (0.2ms)
+Processing by AssetController#ground as PNG
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/walls_1x2.png (0.1ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 5ms (ActiveRecord: 0.0ms)
+
+
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/ground_1x1.png (0.1ms)
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/game/assets/Kidney.png" for 127.0.0.1 at 2017-12-19 15:52:44 -0500
+Processing by AssetController#kidney as PNG
+Started GET "/game/assets/dude189x35.png" for 127.0.0.1 at 2017-12-19 15:52:44 -0500
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/Kidney.png (0.1ms)
+Processing by AssetController#dude as PNG
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms)
+
+
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/dude189x35.png (0.2ms)
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/game/index" for 127.0.0.1 at 2017-12-19 15:54:26 -0500
+Processing by GameController#index as HTML
+  Rendering game/index.html.erb within layouts/application
+  Rendered game/index.html.erb within layouts/application (39.9ms)
+Completed 200 OK in 71ms (Views: 65.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game/assets/collision_test4.json" for 127.0.0.1 at 2017-12-19 15:54:27 -0500
+Processing by AssetController#map as JSON
+Started GET "/game/assets/ground_1x1.png" for 127.0.0.1 at 2017-12-19 15:54:27 -0500
+Processing by AssetController#ground as PNG
+  Rendering assets/games/collision_test4.json
+Started GET "/game/assets/tiles2.png" for 127.0.0.1 at 2017-12-19 15:54:27 -0500
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/ground_1x1.png (0.2ms)
+Started GET "/game/assets/walls_1x2.png" for 127.0.0.1 at 2017-12-19 15:54:27 -0500
+  Rendered assets/games/collision_test4.json (1.2ms)
+Processing by AssetController#tiles as PNG
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms)
+
+
+Processing by AssetController#walls as PNG
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/tiles2.png (0.1ms)
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/walls_1x2.png (0.1ms)
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/game/assets/Kidney.png" for 127.0.0.1 at 2017-12-19 15:54:27 -0500
+Processing by AssetController#kidney as PNG
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/Kidney.png (0.2ms)
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/game/assets/dude189x35.png" for 127.0.0.1 at 2017-12-19 15:54:27 -0500
+Processing by AssetController#dude as PNG
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/dude189x35.png (0.2ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-19 15:54:29 -0500
+Processing by RootController#main as HTML
+  Rendering root/main.html.erb within layouts/application
+  Rendered root/main.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 27ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2017-12-19 15:54:30 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-12-19 15:54:32 -0500
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "O15Os5R011Vh7MwmBBcU5A"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :ensure_signed_out rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-19 15:54:32 -0500
+Processing by RootController#main as HTML
+  Rendering root/main.html.erb within layouts/application
+  Rendered root/main.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-12-19 15:54:34 -0500
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "O15Os5R011Vh7MwmBBcU5A"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :ensure_signed_out rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-19 15:54:34 -0500
+Processing by RootController#main as HTML
+  Rendering root/main.html.erb within layouts/application
+  Rendered root/main.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 30ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
