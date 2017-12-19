@@ -30036,3 +30036,135 @@ Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
 Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
 
 
+Started GET "/game/index" for 127.0.0.1 at 2017-12-19 15:01:35 -0500
+Processing by GameController#index as HTML
+  Rendering game/index.html.erb within layouts/application
+  Rendered game/index.html.erb within layouts/application (85.2ms)
+Completed 200 OK in 135ms (Views: 123.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game/assets/collision_test4.json" for 127.0.0.1 at 2017-12-19 15:01:35 -0500
+Processing by AssetController#map as JSON
+Started GET "/game/assets/tiles2.png" for 127.0.0.1 at 2017-12-19 15:01:35 -0500
+Processing by AssetController#tiles as PNG
+Started GET "/game/assets/ground_1x1.png" for 127.0.0.1 at 2017-12-19 15:01:35 -0500
+  Rendering assets/games/collision_test4.json
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/tiles2.png (0.4ms)
+Started GET "/game/assets/walls_1x2.png" for 127.0.0.1 at 2017-12-19 15:01:35 -0500
+Processing by AssetController#ground as PNG
+  Rendered assets/games/collision_test4.json (2.5ms)
+Completed 200 OK in 8ms (ActiveRecord: 0.0ms)
+
+
+Processing by AssetController#walls as PNG
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/ground_1x1.png (0.2ms)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/walls_1x2.png (0.2ms)
+Completed 200 OK in 5ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/game/assets/Kidney.png" for 127.0.0.1 at 2017-12-19 15:01:35 -0500
+Processing by AssetController#kidney as PNG
+Started GET "/game/assets/dude189x35.png" for 127.0.0.1 at 2017-12-19 15:01:35 -0500
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/Kidney.png (0.2ms)
+Processing by AssetController#dude as PNG
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms)
+
+
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/dude189x35.png (0.9ms)
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/game/index" for 127.0.0.1 at 2017-12-19 15:01:48 -0500
+Processing by GameController#index as HTML
+  Rendering game/index.html.erb within layouts/application
+  Rendered game/index.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 76ms (Views: 72.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game/assets/collision_test4.json" for 127.0.0.1 at 2017-12-19 15:01:49 -0500
+Processing by AssetController#map as JSON
+Started GET "/game/assets/ground_1x1.png" for 127.0.0.1 at 2017-12-19 15:01:49 -0500
+  Rendering assets/games/collision_test4.json
+Processing by AssetController#ground as PNG
+  Rendered assets/games/collision_test4.json (1.4ms)
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/ground_1x1.png (0.4ms)
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game/assets/walls_1x2.png" for 127.0.0.1 at 2017-12-19 15:01:49 -0500
+Processing by AssetController#walls as PNG
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/walls_1x2.png (0.3ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/game/assets/tiles2.png" for 127.0.0.1 at 2017-12-19 15:01:49 -0500
+Processing by AssetController#tiles as PNG
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/tiles2.png (0.3ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/game/assets/Kidney.png" for 127.0.0.1 at 2017-12-19 15:01:49 -0500
+Processing by AssetController#kidney as PNG
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/Kidney.png (0.3ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/game/assets/dude189x35.png" for 127.0.0.1 at 2017-12-19 15:01:49 -0500
+Processing by AssetController#dude as PNG
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/dude189x35.png (0.3ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/game/index" for 127.0.0.1 at 2017-12-19 15:03:59 -0500
+Processing by GameController#index as HTML
+  Rendering game/index.html.erb within layouts/application
+  Rendered game/index.html.erb within layouts/application (47.3ms)
+Completed 200 OK in 78ms (Views: 72.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game/assets/collision_test4.json" for 127.0.0.1 at 2017-12-19 15:03:59 -0500
+Processing by AssetController#map as JSON
+  Rendering assets/games/collision_test4.json
+Started GET "/game/assets/ground_1x1.png" for 127.0.0.1 at 2017-12-19 15:03:59 -0500
+  Rendered assets/games/collision_test4.json (2.2ms)
+Started GET "/game/assets/walls_1x2.png" for 127.0.0.1 at 2017-12-19 15:03:59 -0500
+Started GET "/game/assets/tiles2.png" for 127.0.0.1 at 2017-12-19 15:03:59 -0500
+Processing by AssetController#ground as PNG
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Processing by AssetController#walls as PNG
+Processing by AssetController#tiles as PNG
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/ground_1x1.png (0.5ms)
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/walls_1x2.png (0.3ms)
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/tiles2.png (0.2ms)
+Completed 200 OK in 5ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/game/assets/Kidney.png" for 127.0.0.1 at 2017-12-19 15:03:59 -0500
+Processing by AssetController#kidney as PNG
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/Kidney.png (0.2ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/game/assets/dude189x35.png" for 127.0.0.1 at 2017-12-19 15:03:59 -0500
+Processing by AssetController#dude as PNG
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/dude189x35.png (0.2ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
