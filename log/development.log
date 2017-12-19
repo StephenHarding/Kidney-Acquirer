@@ -30307,3 +30307,129 @@ Processing by RootController#main as HTML
 Completed 200 OK in 30ms (Views: 26.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/public/" for 127.0.0.1 at 2017-12-19 16:02:28 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/public"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/game/index" for 127.0.0.1 at 2017-12-19 16:02:32 -0500
+Processing by GameController#index as HTML
+  Rendering game/index.html.erb within layouts/application
+  Rendered game/index.html.erb within layouts/application (45.3ms)
+Completed 200 OK in 85ms (Views: 81.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game/assets/collision_test4.json" for 127.0.0.1 at 2017-12-19 16:02:33 -0500
+Processing by AssetController#map as JSON
+Started GET "/game/assets/ground_1x1.png" for 127.0.0.1 at 2017-12-19 16:02:33 -0500
+Processing by AssetController#ground as PNG
+  Rendering assets/games/collision_test4.json
+Started GET "/game/assets/walls_1x2.png" for 127.0.0.1 at 2017-12-19 16:02:33 -0500
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/ground_1x1.png (0.1ms)
+Started GET "/game/assets/tiles2.png" for 127.0.0.1 at 2017-12-19 16:02:33 -0500
+  Rendered assets/games/collision_test4.json (1.4ms)
+Processing by AssetController#walls as PNG
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms)
+
+
+Processing by AssetController#tiles as PNG
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/walls_1x2.png (0.2ms)
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/tiles2.png (0.3ms)
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/game/assets/Kidney.png" for 127.0.0.1 at 2017-12-19 16:02:33 -0500
+Processing by AssetController#kidney as PNG
+Started GET "/game/assets/dude189x35.png" for 127.0.0.1 at 2017-12-19 16:02:33 -0500
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/Kidney.png (0.2ms)
+Processing by AssetController#dude as PNG
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/dude189x35.png (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/game/index" for 127.0.0.1 at 2017-12-19 16:36:30 -0500
+Processing by GameController#index as HTML
+  Rendering game/index.html.erb within layouts/application
+  Rendered game/index.html.erb within layouts/application (628.3ms)
+Completed 200 OK in 669ms (Views: 659.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game/assets/collision_test4.json" for 127.0.0.1 at 2017-12-19 16:36:31 -0500
+Processing by AssetController#map as JSON
+Started GET "/game/assets/ground_1x1.png" for 127.0.0.1 at 2017-12-19 16:36:31 -0500
+Started GET "/game/assets/tiles2.png" for 127.0.0.1 at 2017-12-19 16:36:31 -0500
+Processing by AssetController#ground as PNG
+  Rendering assets/games/collision_test4.json
+Started GET "/game/assets/walls_1x2.png" for 127.0.0.1 at 2017-12-19 16:36:31 -0500
+Processing by AssetController#tiles as PNG
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/ground_1x1.png (0.5ms)
+  Rendered assets/games/collision_test4.json (2.0ms)
+Processing by AssetController#walls as PNG
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/tiles2.png (0.1ms)
+Completed 200 OK in 7ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 25ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/walls_1x2.png (0.1ms)
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/game/assets/Kidney.png" for 127.0.0.1 at 2017-12-19 16:36:31 -0500
+Processing by AssetController#kidney as PNG
+Started GET "/game/assets/dude189x35.png" for 127.0.0.1 at 2017-12-19 16:36:31 -0500
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/Kidney.png (0.2ms)
+Processing by AssetController#dude as PNG
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms)
+
+
+Sent file /Users/stephenharding/Desktop/WDI/Unit_04/GameApp/assets/games/dude189x35.png (0.6ms)
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-19 16:36:34 -0500
+Processing by RootController#main as HTML
+  Rendering root/main.html.erb within layouts/application
+  Rendered root/main.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 30ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+

@@ -12,5 +12,5 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require jquery-readyselector
+//= require phaser
 //= require_tree .
