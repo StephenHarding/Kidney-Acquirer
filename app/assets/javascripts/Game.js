@@ -83,7 +83,7 @@ function create() {
     jumpButton = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
  endText = game.add.text(300, 230, "" ,{ fontSize: '64px', fill: '#000' });
 }
-endText.fixedToCamera = true
+// endText.fixedToCamera = true
 function collect(p, s) {
         spleensc -= 1
     scoreText.text = `Kidneys: ` + spleensc
