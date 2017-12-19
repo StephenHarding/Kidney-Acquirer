@@ -4,7 +4,6 @@
 //= require action_cable
 //= require_self
 //= require_tree ./channels
-//= require phaser
 (function() {
   this.App || (this.App = {});
 

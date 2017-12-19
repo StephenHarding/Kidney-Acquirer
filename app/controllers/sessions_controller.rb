@@ -15,17 +15,16 @@ class SessionsController < ApplicationController
     if user
       sign_in(user)
       flash[:notice] = "Hi, #{username}! You signed in!"
-      redirect_to some_path
+      redirect_to game_index_path
     else
       flash[:error] = 'Username or password incorrect'
       @user = User.new(username: username)
       render :new
     end
-    class SessionsController < ApplicationController
-  # ...
   def destroy
     sign_out
     flash[:notice] = 'You signed out!'
-    redirect_to some_path
+    redirect_to root_path
   end
-  end
+end
+end

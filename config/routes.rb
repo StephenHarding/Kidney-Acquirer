@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get 'game/assets/Kidney', to: 'asset#kidney'
 get 'game/assets/collision_test4', to: 'asset#map', defaults: { format: 'json' }
 resources :users, only: [:new, :create, :index, :show]
-
-  resource :session, only: [:new, :create, :destroy]
+root "root#main"
+  resources :session, only: [:new, :create, :destroy]
   resources :high_score
 end

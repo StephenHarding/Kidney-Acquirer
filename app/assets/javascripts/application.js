@@ -12,6 +12,5 @@
 //
 //= require rails-ujs
 //= require turbolinks
+//= require jquery-readyselector
 //= require_tree .
-//= require phaser
-//= require Game
