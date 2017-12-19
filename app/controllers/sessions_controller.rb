@@ -21,10 +21,11 @@ class SessionsController < ApplicationController
       @user = User.new(username: username)
       render :new
     end
+  end
   def destroy
     sign_out
     flash[:notice] = 'You signed out!'
     redirect_to root_path
   end
-end
+
 end
