@@ -86,7 +86,7 @@ function create() {
 // endText.fixedToCamera = true
 function collect(p, s) {
         spleensc -= 1
-    scoreText.text = `Kidneys: ` + spleensc
+    scoreText.text = "Kidneys: " + spleensc
     s.kill();
 
 
