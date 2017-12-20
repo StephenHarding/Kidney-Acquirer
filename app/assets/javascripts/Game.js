@@ -92,22 +92,6 @@ function collect(p, s) {
 
 }
 
-function postScore() {
-    console.log('posted')
-    fetch('/high_score/create/', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-         score:  ft,
-
-      })
-    }).then(() => {
-      console.log("Posted")
-  })
-}
-
 function update() {
         if (spleensc === 0 && score === false ) {
             score = true
