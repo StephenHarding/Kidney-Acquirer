@@ -12,7 +12,7 @@ class AssetController < ApplicationController
     send_file "./app/assets/game/walls_1x2.png", type: 'image/png', disposition: 'inline'
   end
     def dude
-    send_file "./app/assets/game/dude189x35.png", type: 'image/png', disposition: 'inline'
+    send_file "./app/assets/game/Dude189x35.png", type: 'image/png', disposition: 'inline'
   end
    def kidney
     send_file "./app/assets/game/Kidney.png", type: 'image/png', disposition: 'inline'
