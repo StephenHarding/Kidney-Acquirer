@@ -1,10 +1,11 @@
 class UsersController < ApplicationController
 
-  before_action :ensure_signed_out, only: [:new, :create]
+  before_action :ensure_signed_out, only: [:create]
   before_action :ensure_signed_in, only: [:show, :index]
 
   def new
     @user = User.new
+    render :new
   end
 
   def create

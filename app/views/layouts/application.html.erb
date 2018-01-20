@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GameApp</title>
+    <title>Kidney Acquirer</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Arimo|PT+Serif|Roboto+Slab" rel="stylesheet">
     <%= csrf_meta_tags %>
-
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-
   </head>
 
   <body>
-    <%= yield %>
+  	<%= yield %>
+
+
+
+    <div class="footer"></div>
   </body>
 </html>

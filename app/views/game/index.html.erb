@@ -1,9 +1,26 @@
-<%= javascript_include_tag "application" %>
+<%= render partial: 'nav'%>
 
-<div>
+<div class="gback">
+<div class="gcontainer">
+<div class="mid" id="phaser">
         <script src="//cdn.jsdelivr.net/phaser/2.5.0/phaser.min.js"></script>
 
-<%= javascript_include_tag "Game" %>
+<%= javascript_include_tag "Game", :class => "game" %>
 
 
 </div> 
+<div class="inst">
+	<div class="flexinst">
+		<img class="instimg f" src= "https://niketalk.com/media/spacebar-png.2424928/full?d=1500100861">
+		<p class="f t">Jump</p>
+	</div>
+	<div class="flexinst">
+		<img class="instimg f" src= "https://steamuserimages-a.akamaihd.net/ugc/150137038706226415/8BC7DB16C32CC48D3EED549C67DD814FF52D706A/">
+		<p class="f t">Move</p>
+	</div>
+</div>
+</div>
+
+
+</div>
+<%= render partial: 'end'%>

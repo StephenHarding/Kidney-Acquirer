@@ -1,6 +1,10 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
  
+  helper_method :current_user
+
+  private
+
  def current_user
     @current_user ||= find_current_user
   end
@@ -14,10 +18,11 @@ class ApplicationController < ActionController::Base
     token && User.find_by(session_token: token)
   end
   def sign_out
+    return unless current_user
+    current_user.update!(session_token: nil)
     session.delete(:session_token)
-    current_user.update_attribute(:session_token, nil)
   end
-    def ensure_signed_in
+  def ensure_signed_in
     return if current_user
     flash[:error] = 'you must be signed in to see this'
     redirect_to root_path

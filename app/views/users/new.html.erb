@@ -1,3 +1,6 @@
+<%= render partial: 'nav'%>
+<div class="signIn1">
+<div class="signIn2">
 <h2> Create an account </h2>
 
 <%= form_for @user do |form| %>
@@ -17,3 +20,6 @@
 
 <br>
 Returning user? <%= link_to 'Sign in', new_session_path %>
+</div>
+</div>
+<%= render partial: 'end'%>

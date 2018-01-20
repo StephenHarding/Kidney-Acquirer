@@ -13,3 +13,81 @@
  *= require_tree .
  *= require_self
  */
+.title {
+	font-family: 'Anton', sans-serif;
+	font-size: 24px
+}
+.t {
+	font-family: 'Roboto Slab', serif;
+}
+.S1 {
+	position: absolute;
+	top: 92%;
+	display: inline-block;
+	margin: 0px 12px 0px 12px;
+	background-color:#8cf5f7;
+	padding: 6px 12px 6px 12px;
+	text-decoration: none;
+	color: black;
+	border-radius: 25px;
+	border-style: solid;
+  border-width: 2px;
+  border-color:  #7ddee0;
+
+}
+.notice {
+	position: absolute;
+	top: 92%;
+	left: 20%;
+	display: inline-block;
+	margin: 0px 12px 0px 12px;
+	background-color:#8cf5f7;
+	padding: 6px 12px 6px 12px;
+	text-decoration: none;
+	color: black;
+	border-radius: 25px;
+	border-style: solid;
+  border-width: 2px;
+  border-color:  #7ddee0;
+}
+.errors {
+	position: absolute;
+	top: 92%;
+	left: 40%;
+	display: inline-block;
+	margin: 0px 12px 0px 12px;
+	background-color:#ff6666;
+	padding: 6px 12px 6px 12px;
+	text-decoration: none;
+	color: black;
+	border-radius: 25px;
+	border-style: solid;
+  border-width: 2px;
+  border-color:  #7ddee0;
+}
+
+.nLink {
+	margin: 0px 12px 0px 12px;
+	background-color:#8cf5f7;
+	padding: 6px 12px 6px 12px;
+	text-decoration: none;
+	position:relative;
+	color: black;
+	border-radius: 25px;
+	border-style: solid;
+  border-width: 1px;
+}
+.signIn2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.links {
+	margin: 0px 24px 0px 0px;
+	position: relative;
+}
+.title {
+	margin: 0px 0px 0px 24px;
+}
+

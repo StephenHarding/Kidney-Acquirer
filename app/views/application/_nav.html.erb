@@ -1,0 +1,9 @@
+	<div class="nav">
+		<p class="title">Kidney Acquirer</p>
+		<div class="links">
+			<%= link_to 'Create an account', new_user_path, :class => "nLink nl1 Load t" %>
+			<%= link_to 'Sign in', new_session_path, :class => "nLink nl2 Load t" %>
+			<%= link_to 'Sign out', session_path, method: :DELETE, :class => "nLink nl3 Load t" %>
+			<%= link_to 'Play Game', game_index_path, :class => "nLink nl4 Load " %>
+		</div>
+	</div>
