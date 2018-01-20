@@ -26,7 +26,7 @@ var score = false
 var ft = 0
 
 function create() {
-
+    console.log("hello")
     game.physics.startSystem(Phaser.Physics.ARCADE);
 
     game.stage.backgroundColor = '#787878';
