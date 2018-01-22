@@ -17,4 +17,7 @@ class AssetController < ApplicationController
    def kidney
     send_file "./app/assets/game/Kidney.png", type: 'image/png', disposition: 'inline'
   end
+  def fav
+    send_file "./app/assets/game/favicon.ico", type: 'image/png', disposition: 'inline'
+  end
 end

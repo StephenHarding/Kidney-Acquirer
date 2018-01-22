@@ -5,6 +5,7 @@ Rails.application.routes.draw do
  get 'game/assets/walls_1x2', to: 'asset#walls'
  get 'game/assets/dude189x35', to: 'asset#dude'
   get 'game/assets/Kidney', to: 'asset#kidney'
+  get 'game/assets/fav', to: 'asset#fav'
 get 'game/assets/collision_test4', to: 'asset#map', defaults: { format: 'json' }
 resources :users, only: [:new, :create, :index, :show]
 root "root#main"
