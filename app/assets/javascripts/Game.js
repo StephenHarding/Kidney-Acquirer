@@ -20,7 +20,7 @@ var layer;
 var p;
 var cursors;
 var jumpButton
-var spleensc = 1
+var spleensc = 10
 var t = 0
 var score = false
 var ft = 0
