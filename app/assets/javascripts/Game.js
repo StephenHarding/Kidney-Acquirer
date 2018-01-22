@@ -26,7 +26,6 @@ var score = false
 var ft = 0
 
 function create() {
-    console.log("hello")
     game.physics.startSystem(Phaser.Physics.ARCADE);
 
     game.stage.backgroundColor = '#787878';
@@ -153,7 +152,13 @@ function update() {
     {
         if (p.body.onFloor())
         {
+            if (cursors.right.isDown || cursors.left.isDown) {
+                p.body.velocity.y = -294;
+                console.log("High jump")
+            }
+            else {
             p.body.velocity.y = -284;
+            }
         }
     }
 }
