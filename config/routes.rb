@@ -9,5 +9,5 @@ get 'game/assets/collision_test4', to: 'asset#map', defaults: { format: 'json' }
 resources :users, only: [:new, :create, :index, :show]
 root "root#main"
   resource :session, only: [:new, :create, :destroy]
-  resources :high_score
+  resources :highscores
 end

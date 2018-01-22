@@ -10,7 +10,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(create_params)
-
+  
     if @user.save
       sign_in(@user)
       flash[:notice] = 'You are signed in!'

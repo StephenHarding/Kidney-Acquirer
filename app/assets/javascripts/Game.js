@@ -20,7 +20,7 @@ var layer;
 var p;
 var cursors;
 var jumpButton
-var spleensc = 10
+var spleensc = 1
 var t = 0
 var score = false
 var ft = 0
@@ -91,6 +91,22 @@ function collect(p, s) {
 
 
 }
+function pscore(ft) {
+    var sc = parseFloat(ft)
+    console.log(JSON.stringify({highscore : {score : "1",}}))
+    fetch('/highscores', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+    },
+      body: JSON.stringify(  {score : 1,}),
+      credentials: 'same-origin'
+    }).then(res => res.json())
+      .then(res => {
+        console.log(res);
+      }).catch(err => console.log(err));
+}
 
 function update() {
         if (spleensc === 0 && score === false ) {
@@ -98,6 +114,7 @@ function update() {
          ft = t
         endText.text = ft
         endText.fixedToCamera = true
+        pscore(ft)
     }
 
 

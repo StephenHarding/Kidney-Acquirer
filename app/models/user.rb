@@ -7,7 +7,7 @@ class User < ApplicationRecord
 
   validates :password, length: PASSWORD_LENGTH, allow_nil: true
 
-
+ has_many :highscores
   attr_reader :password
 
   def self.find_from_credentials(username, password)
